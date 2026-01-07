@@ -1,0 +1,132 @@
+/* WRAPPER */
+.calendar-wrapper {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+.calendar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d5be3;
+  margin-bottom: 15px;
+}
+
+/* Calendar Styling */
+.react-calendar {
+  border: none;
+  width: 100%;
+  background: transparent;
+}
+
+.react-calendar__tile {
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.25s ease !important;
+  position: relative;
+}
+
+.react-calendar__tile:hover {
+  background: #eaf1ff !important;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Highlight selected date */
+.react-calendar__tile--active {
+  background: #2d5be3 !important;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Mark days with medicines */
+.day-has-meds {
+  background: #eef6ff;
+  position: relative;
+}
+
+.day-has-meds::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #2d5be3;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+}
+
+/* DAY MEDICINE CARD */
+.day-info-card {
+  margin-top: 20px;
+  background: #f7faff;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #dce8ff;
+}
+
+.day-info-card h4 {
+  font-weight: 700;
+  color: #1c3d8c;
+  margin-bottom: 15px;
+}
+
+.day-med-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  animation: slideIn 0.3s ease;
+}
+
+.pill-icon {
+  font-size: 22px;
+}
+
+.med-title {
+  font-weight: 600;
+  color: #2d5be3;
+  margin: 0;
+}
+
+.med-time {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.no-meds {
+  color: #666;
+  padding: 10px 0;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.calendar-wrapper {
+  background: transparent;
+  padding: 0;
+}
+
+.day-info-card {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f7fbff;
+}

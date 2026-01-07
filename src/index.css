@@ -1,0 +1,129 @@
+:root{
+  --bg:#f3f7fb; --card:#ffffff; --muted:#6b7280; --accent:#0b6ea8; --accent-2:#0ea5a4; --danger:#ef4444;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:var(--bg); color:#0f1724}
+a{color:inherit; text-decoration:none}
+.page{padding:20px; max-width:1100px; margin:0 auto}
+.center{display:flex; align-items:center; justify-content:center; min-height:70vh}
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 8px 30px rgba(12,20,40,0.06)}
+.card-lg{background:linear-gradient(180deg,#fff,#f6fbff); padding:36px; border-radius:14px; box-shadow:0 10px 40px rgba(10,20,40,0.06); text-align:center}
+.muted{color:var(--muted)}
+.btn{background:var(--accent); color:white; padding:10px 14px; border-radius:10px; border:0; cursor:pointer; font-weight:600}
+.btn.ghost{background:transparent; border:1px solid #cfe9ff; color:var(--accent)}
+.btn.small{padding:6px 8px; font-size:14px; border-radius:8px}
+.form-col{display:flex; flex-direction:column; gap:10px}
+input, select { padding:10px 12px; border-radius:8px; border:1px solid #e6eef6; font-size:16px }
+
+/* Topbar */
+.topbar{display:flex; align-items:center; justify-content:space-between; padding:14px 28px; background:transparent}
+.brand{font-weight:800; color:var(--accent); font-size:20px}
+.topnav{display:flex; gap:12px}
+.topnav a{padding:8px 10px; border-radius:8px}
+.profile-area{display:flex; gap:8px; align-items:center}
+
+/* Dashboard */
+.dash-hero{display:flex; justify-content:space-between; align-items:center}
+.cards-row{display:flex; gap:12px; margin-top:12px}
+.card.small{flex:1; padding:12px; text-align:center}
+.card-title{font-size:13px; color:var(--muted)}
+.card-num{font-size:22px; font-weight:800}
+.card-num.green{color:#10b981}
+.card-num.yellow{color:#f59e0b}
+.card-num.red{color:var(--danger)}
+
+.med-list{display:flex; flex-direction:column; gap:12px; margin-top:8px}
+.med-card{display:flex; justify-content:space-between; align-items:center; padding:12px; border-radius:10px; background:var(--card); box-shadow:0 6px 18px rgba(10,20,40,0.04); font-size:18px}
+.med-card.pending{border-left:6px solid #f59e0b}
+.med-card.upcoming{border-left:6px solid #0ea5a4}
+.med-card.taken{border-left:6px solid #10b981}
+.med-card.missed{border-left:6px solid var(--danger)}
+
+/* Schedule table */
+.schedule-table{margin-top:12px}
+.table-header{display:grid; grid-template-columns:120px 1fr 160px 140px; gap:12px; font-weight:700; padding:8px}
+.table-row{display:grid; grid-template-columns:120px 1fr 160px 140px; gap:12px; align-items:center; padding:12px; border-radius:10px; background:var(--card); margin-bottom:10px; font-size:18px}
+.col-time{font-weight:700; color:var(--accent)}
+.pill{padding:8px 10px; border-radius:999px; font-weight:700}
+.pill.missed{background:#fff1f2; color:var(--danger)}
+.pill.pending{background:#fffbeb; color:#92400e}
+.pill.upcoming{background:#ecfeff; color:#065f46}
+.pill.taken{background:#ecfdf5; color:#065f46}
+.big-btn{background:var(--accent); color:white; padding:10px 14px; border-radius:12px}
+
+/* Alerts */
+.alert-card{display:flex; justify-content:space-between; gap:12px; align-items:center; padding:12px; background:var(--card); border-radius:10px; margin-top:8px}
+
+/* misc */
+.form-error{color:#b91c1c;background:#fff1f2;padding:8px;border-radius:8px}
+.empty{padding:18px; background:var(--card); border-radius:10px; box-shadow:0 6px 18px rgba(10,20,40,0.04); text-align:center}
+@media (max-width:880px){
+  .table-header, .table-row { grid-template-columns: 100px 1fr; grid-auto-rows:auto }
+  .col-status, .col-action { grid-column: 1 / -1; margin-top:8px }
+  .topnav{display:none}
+}
+.settings-page {
+  max-width: 520px;
+  margin: auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn.active {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.btn.ghost {
+  background: #f1f5f9;
+}
+
+.btn.red {
+  background: #dc2626;
+  color: white;
+}
+
+.card.danger {
+  border: 1px solid #fecaca;
+}
+
+.logout-btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #020617;
+}

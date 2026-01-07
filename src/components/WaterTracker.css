@@ -1,0 +1,155 @@
+/* ================= MOOD TRACKER WRAPPER ================= */
+.mood-page {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.18);
+}
+
+/* TITLE */
+.mood-page h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #005b96;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ================= TWO COLUMN LAYOUT ================= */
+.mood-page {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr; /* LEFT bigger, RIGHT history */
+  gap: 28px;
+}
+
+/* ================= LEFT PANEL ================= */
+.mood-icons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.mood-icons button {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  border: 1.8px solid #dbeafe;
+  background: #f8fbff;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.mood-icons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.25);
+}
+
+.mood-icons button.active {
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: #fff;
+  border: none;
+}
+
+/* ================= SYMPTOMS ================= */
+.symptom-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.symptom-tags span {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #dbeafe;
+  background: #f8fbff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.symptom-tags span.selected {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* ================= NOTES ================= */
+.mood-page textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #cfe3ff;
+  font-size: 14px;
+  resize: none;
+  margin-bottom: 16px;
+}
+
+.mood-page textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* ================= SAVE BUTTON ================= */
+.mood-page button:last-of-type {
+  width: 100%;
+  padding: 13px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.mood-page button:last-of-type:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 123, 255, 0.4);
+}
+
+/* ================= RIGHT SIDE HISTORY ================= */
+.mood-history {
+  background: #f8fbff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px #e0ecff;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+/* History card */
+.history-row {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #ffffff;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.history-row span {
+  font-size: 26px;
+}
+
+.history-row div {
+  font-size: 13px;
+  color: #334155;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+  .mood-page {
+    grid-template-columns: 1fr;
+  }
+
+  .mood-history {
+    max-height: none;
+  }
+}

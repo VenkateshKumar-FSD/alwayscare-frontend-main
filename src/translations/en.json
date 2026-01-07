@@ -1,0 +1,185 @@
+{
+  "dashboard": "Dashboard",
+  "schedule": "Schedule",
+  "add": "Add Medicine",
+  "alerts": "Alerts",
+  "settings": "Settings",
+  "logout": "Logout",
+  "guest": "Guest",
+
+  "greet": "Hello",
+  "taken": "Taken",
+  "pending": "Pending",
+  "missed": "Missed",
+  "Todays medicine": "Today's Medicines",
+  "no_meds": "No medicines for today",
+
+  "water_tracker": "Water Tracker",
+  "glasses": "glasses",
+  "add_glass": "Add Glass",
+  "reset": "Reset",
+  "water_completed": "Daily water goal completed 🎉",
+
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "alarm_sound": "Alarm Sound",
+  "on": "On",
+  "off": "Off",
+  "time_format": "Time Format",
+  "hour_12": "12 Hour",
+  "hour_24": "24 Hour",
+  "danger_zone": "Danger Zone",
+  "reset_all": "Reset All Data",
+  "reset_confirm": "Are you sure you want to reset everything?",
+
+  
+  "add_medicine": "Add Medicine",
+  "add_medicine_subtitle": "Fill the details to schedule your medicine",
+
+  "medicine_placeholder": "Medicine name",
+  "dosage_placeholder": "Dosage (e.g. 1 tablet)",
+
+  "daily": "Daily",
+  "weekdays": "Weekdays",
+  "mon_wed_fri": "Mon, Wed, Fri",
+  "tue_thu_sat": "Tue, Thu, Sat",
+
+  "save": "Save",
+  "cancel": "Cancel",
+
+  "error_medicine_name": "Please enter medicine name",
+  "error_dosage": "Please enter dosage",
+  "reminder": "Reminder",
+
+  "alerts_title": "Alerts",
+  "no_alerts": "No alerts available",
+  "remind": "Remind",
+  "clear_history": "Clear History",
+
+  "weekly_summary": "Weekly Health Summary",
+  "health_score": "Health Score",
+  "mood": "Mood",
+  "water": "Water Intake",
+  "medicine": "Medicine Adherence",
+
+  "drink_more_water": "Drink more water",
+  "track_mood": "Track mood daily",
+  "good_medicine": "Great medicine discipline",
+  "profile": "Profile",
+  "change_photo": "Change Photo",
+
+  "name": "Name",
+  "age": "Age",
+  "gender": "Gender",
+  "blood_group": "Blood Group",
+  "medical_conditions": "Medical Conditions",
+  "allergies": "Allergies",
+  "emergency_contact": "Emergency Contact",
+
+  "edit_profile": "Edit Profile",
+
+  "today_schedule": "Today's Schedule",
+
+  "time": "Time",
+ 
+  "status": "Status",
+  "action": "Action",
+
+  "no_schedule_today": "No medicines scheduled for today",
+
+  "upcoming": "Upcoming",
+
+  "mark_taken": "Mark as Taken",
+
+  "sound_on": "ON",
+  "sound_off": "OFF",
+
+  "reset_settings": "Reset All Settings",
+ 
+  "bmi_title": "BMI Calculator",
+  "height_placeholder": "Height (cm)",
+  "weight_placeholder": "Weight (kg)",
+  "calculate": "Calculate",
+  "bmi": "BMI",
+
+  "bmi_underweight": "Underweight",
+  "bmi_normal": "Normal",
+  "bmi_overweight": "Overweight",
+  "bmi_obese": "Obese",
+  
+  "medicine_calendar": "Medicine Calendar",
+  "medicines_for": "Medicines for",
+  "no_medicines": "No medicines scheduled",
+  "mood_tracker": "Mood Tracker",
+  "select_mood_alert": "Please select mood",
+  "write_notes": "Write your notes...",
+  "save_entry": "Save Entry",
+
+  "very_happy": "Very Happy",
+  "happy": "Happy",
+  "neutral": "Neutral",
+  "sad": "Sad",
+  "very_sad": "Very Sad",
+
+  "weekend_history": "Weekend History",
+  "export_csv": "Export CSV",
+  "no_weekend_entries": "No weekend entries yet",
+  "no_weekend_export": "No weekend data to export",
+  "Headache": "Headache",
+  "Nausea": "Nausea",
+  "Dizziness": "Dizziness",
+  "Fatigue": "Fatigue",
+  "Insomnia": "Insomnia",
+  "Anxiety": "Anxiety",
+  "delete": "நீக்கு",
+
+  "mood_tracker": "Mood Tracker",
+  "very_happy": "Very Happy",
+  "happy": "Happy",
+  "neutral": "Neutral",
+  "sad": "Sad",
+  "very_sad": "Very Sad",
+
+  "headache": "Headache",
+  "nausea": "Nausea",
+  "dizziness": "Dizziness",
+  "fatigue": "Fatigue",
+  "insomnia": "Insomnia",
+  "anxiety": "Anxiety",
+
+  "write_notes": "Write your notes...",
+  "save_entry": "Save Entry",
+  "weekend_history": "Weekend History",
+  "export_csv": "Export CSV",
+  "no_weekend_entries": "No weekend entries yet",
+  "select_mood_alert": "Please select mood",
+  "no_weekend_data": "No weekend data to export",
+
+  "date": "Date",
+  "mood": "Mood",
+  "symptoms": "Symptoms",
+  "notes": "Notes",
+  "weekly_health_summary": "Weekly Health Summary",
+  "health_score": "Health Score",
+
+  "medicines": "Medicines",
+  "mood": "Mood",
+  "water": "Water",
+
+  "drink_more_water": "Drink more water",
+  "track_mood_daily": "Track mood daily",
+  "good_medicine_discipline": "Great medicine discipline",
+
+  "weekly_mood": "Weekly Mood",
+  "mood_level": "Mood Level",
+  "weekly_health_summary": "Weekly Health Summary",
+  "delete": "Delete"
+}
+
+
+
+
+
+
+

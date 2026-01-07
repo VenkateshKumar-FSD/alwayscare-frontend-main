@@ -1,0 +1,182 @@
+/* ===============================
+   GLOBAL
+================================ */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8f4fb, #f6fbff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+   CARD
+================================ */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 38px 36px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 20px 45px rgba(13, 71, 161, 0.15),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  animation: slideFade 0.7s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 55px rgba(13, 71, 161, 0.22);
+}
+
+/* ===============================
+   BRAND
+================================ */
+.auth-brand {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.auth-brand img {
+  width: 48px;
+  margin-bottom: 8px;
+}
+
+.auth-brand h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.auth-brand p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #607d8b;
+}
+
+/* ===============================
+   FORM
+================================ */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Floating Label */
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  font-size: 14px;
+  color: #90a4ae;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background: white;
+  padding: 0 6px;
+  transition: 0.25s ease;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #e3f2fd;
+  font-size: 15px;
+  color: #0d47a1;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.form-group input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 4px rgba(33,150,243,0.15);
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: #1976d2;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.auth-btn-primary {
+  margin-top: 6px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #1976d2, #2196f3);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(33,150,243,0.4);
+}
+
+/* Ripple effect */
+.auth-btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.auth-btn-primary:active::after {
+  opacity: 1;
+}
+
+/* Secondary */
+.auth-btn-secondary {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #1976d2;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.auth-btn-secondary:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 22px;
+  }
+}
